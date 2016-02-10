@@ -65,7 +65,8 @@ NAV BAR
 }
 
 .nav ul li:hover {
-	color: crimson;
+	margin-top: 2px;
+	border-bottom: 2px solid red;
 }
 
 /*=================================
@@ -149,6 +150,7 @@ PROJECTS
 
 .projects-content {
 	display: flex;
+	justify-content: space-around;
 }
 
 .card {
@@ -158,11 +160,58 @@ PROJECTS
 	background-color: cornsilk;
 	border-radius: 15px;
 	border-bottom: 5px solid gray;
+	align-items: center;
+	padding: 1.6%;
 }
 
+.button {
+	font-family:  "Open Sans";
+	font-weight: 800;
+	font-size: 2.2em;
+	padding: 0 20px;
+	border-radius: 5px;
+	border: none;
+	border-bottom: 4px solid red;
+}
+
+.button:hover {
+	border: none;
+	margin-top: 4px;
+}
+
+.gear:hover {
+	-webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
 
+/*=================================
+
+BLOG
+
+=================================*/
 
 
+/*=================================
 
+CONTACT
 
+=================================*/
+
+.contact-card {
+	background-color: cornsilk;
+	border-radius: 15px;
+	border-bottom: 5px solid gray;
+	align-items: center;
+	padding: 1.6%;
+}
+
+/*=================================
+
+FOOTER
+
+=================================*/
