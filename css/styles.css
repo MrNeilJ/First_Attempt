@@ -14,16 +14,29 @@ Portfolio CSS
 NAV BAR
 
 =================================*/
-
-.nav {
+.navbar {
 	display: flex;
-	text-align: center;
-	justify-content: space-between;
-	height: 100px;
+	height: 70px;
 	background-color: #000;
 	opacity: .85;
-	color: #fff;
 	position: fixed;
+	width: 100%;
+	justify-content: center;
+}
+
+.nav {
+	height: 70px;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 80%;
+	
+}
+
+.nav img {
+	height: 80px;
+	width: 80px;
 }
 
 .nav h2 {
@@ -31,18 +44,35 @@ NAV BAR
 	background-position: left;
 	background-repeat: no-repeat;
 	background-size: contain;
-	padding-left: 60px;
-}
-.web-name {
+	padding-left: 50px;
+	font-size: 2.2em;
 	
-}
+} 
 
-.web-name::before {
-	bac
-}
 
+.nav ul {
+
+}
 .nav ul li {
 	display: inline-block;
+	font-size: 1.2em;
+	padding: 0 2px;
+	margin: 0 2px;
+}
+
+.nav ul li:hover {
+	color: crimson;
+}
+
+/*=================================
+
+CONTAINER
+
+=================================*/
+
+.container {
+	width: 80%;
+	margin: 0 auto;
 }
 
 /*=================================
@@ -52,5 +82,16 @@ JUMBOTRON
 =================================*/
 
 .jumbotron {
-	margin-top: 100px;
+	padding-top: 70px;
+	height: 550px;
+	background-image: url(../img/hipster_background.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.flexed {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
