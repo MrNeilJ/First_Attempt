@@ -8,6 +8,10 @@ Portfolio CSS
 	font-family: "Open Sans"; "Helvetica", "Arial", "sans-serif";
 }
 
+html {
+	background-color: #efefef;
+}
+
 
 /*=================================
 
@@ -88,10 +92,77 @@ JUMBOTRON
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-}
-
-.flexed {
+	
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
+
+.jumbotron img {
+	height: 200px;
+	width: 200px;
+	border-radius: 100%;
+	background-color: aquamarine;
+}
+
+.jumbotron h1 {
+	font-size: 5em;
+	margin: 0;
+}
+
+.jumbotron h3 {
+	font-size: 2em;
+	margin: 5px;
+}
+
+
+/*=================================
+
+ABOUT
+
+=================================*/
+
+.about-info {
+	display: flex;
+	background-color: cornsilk;
+	border-radius: 15px;
+	border-bottom: 5px solid gray;
+	padding: 2%;
+	font-weight: lighter;
+}
+
+.items {
+	flex-grow: 1;
+}
+
+.about-info: nth-child(odd) {
+	
+}
+
+
+/*=================================
+
+PROJECTS
+
+=================================*/
+
+.projects-content {
+	display: flex;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: cornsilk;
+	border-radius: 15px;
+	border-bottom: 5px solid gray;
+}
+
+
+
+
+
+
+
