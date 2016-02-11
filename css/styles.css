@@ -152,12 +152,12 @@ ABOUT
 	border-radius: 15px;
 	border-bottom: 5px solid gray;
 	padding: 1.5%;
+	flex-wrap: wrap;
 }
 
 .item {
-	flex-grow: 1;
 	margin: 1.5%;
-	flex: 1;
+	flex: 1 450px;
 }
 
 .about-info: nth-child(odd) {
@@ -229,10 +229,25 @@ CONTACT
 	background-color: cornsilk;
 	border-radius: 15px;
 	border-bottom: 5px solid gray;
-	align-items: center;
 	padding: 1.6%;
 	display: flex;
 	flex-wrap: wrap;
+}
+
+.subText li {
+	list-style: none;
+	margin: 10px 0;
+	
+}
+
+.subText a {
+	text-decoration: none;
+	color: black;
+}
+
+.subText a:hover{
+	color: red;
+	text-decoration: underline;
 }
 
 /*=================================
@@ -252,8 +267,38 @@ FOOTER
 }
 
 .footer ul {
+	padding-left: 0;
 }
 .footer li {
 	display: inline;
+}
+	
+/*=================================
+
+SOCIAL MEDIA
+
+=================================*/	
 	
 
+a.social {
+ display: inline-flex;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: .4;
+  transition: all .5s;
+}
+a.twitter {
+  background-image: url(../img/twitter.svg);
+}
+a.linkedin {
+  background-image: url(../img/linkedin.svg);
+}
+a.github {
+  background-image: url(../img/github.svg);
+}
+a.social:hover {
+  opacity: 1;
+}
