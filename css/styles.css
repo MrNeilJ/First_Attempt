@@ -234,6 +234,10 @@ CONTACT
 	flex-wrap: wrap;
 }
 
+ul.subtext {
+	padding-left: 0;
+}
+
 .subText li {
 	list-style: none;
 	margin: 10px 0;
@@ -272,6 +276,8 @@ FOOTER
 .footer li {
 	display: inline;
 }
+
+
 	
 /*=================================
 
@@ -279,6 +285,23 @@ SOCIAL MEDIA
 
 =================================*/	
 	
+.twitter-icon {
+	padding-left: 40px;
+	background-image: url(../img/twitter.svg);
+	background-repeat: no-repeat;
+}
+
+.linkedIn-icon {
+	padding-left: 40px;
+	background-image: url(../img/linkedin.svg);
+	background-repeat: no-repeat;
+}
+
+.github-icon {
+	padding-left: 40px;
+	background-image: url(../img/github.svg);
+	background-repeat: no-repeat;
+}
 
 a.social {
  display: inline-flex;
