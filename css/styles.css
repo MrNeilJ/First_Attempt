@@ -10,6 +10,7 @@ Portfolio CSS
 
 html {
 	background-color: #efefef;
+	font-size: 1em;
 }
 
 
@@ -129,7 +130,7 @@ FONTS
 }
 
 .subtext {
-	font-size: 1.4em;
+	font-size: 1.2em;
 	font-weight: lighter;
 }
 
@@ -174,6 +175,7 @@ PROJECTS
 .projects-content {
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 .card {
@@ -325,3 +327,47 @@ a.github {
 a.social:hover {
   opacity: 1;
 }
+
+
+
+
+/*=================================
+
+PROJECTS PAGE
+
+=================================*/	
+
+
+/*=================================
+
+JUMBO PROJECT
+
+=================================*/	
+
+.jumboProject {
+	display: flex;
+	padding-top: 70px;
+	height: 500px;
+	background-color: antiquewhite;
+	width: 100%
+	justify-content: space-around;
+	flex-direction: row;
+}
+
+.project-logo {
+	width: 50%;
+}
+
+
+
+@media(max-width: 1200px) { 
+	.nav {
+		width: 90%;
+	}
+	
+	.container {
+		width: 90%;
+	}
+}
+
+
